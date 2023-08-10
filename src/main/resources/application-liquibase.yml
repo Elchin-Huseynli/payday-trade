@@ -1,0 +1,5 @@
+spring:
+    liquibase:
+      change-log: classpath:liquibase/changelog-master.yml
+      default-schema: public
+      enabled: true

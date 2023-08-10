@@ -1,0 +1,6 @@
+spring:
+  cloud:
+    openfeign:
+      clients:
+        externalService:
+          url: https://dummyjson.com

@@ -1,0 +1,67 @@
+databaseChangeLog:
+  - changeSet:
+      id: 3
+      author: elchinhuseynli
+      changes:
+        - createTable:
+            tableName: product
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: title
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: description
+                  type: text
+                  constraints:
+                    nullable: true
+              - column:
+                  name: price
+                  type: double
+                  constraints:
+                    nullable: false
+              - column:
+                  name: discount_percentage
+                  type: double
+                  constraints:
+                    nullable: true
+              - column:
+                  name: rating
+                  type: double
+                  constraints:
+                    nullable: true
+              - column:
+                  name: stock
+                  type: integer
+                  constraints:
+                    nullable: false
+              - column:
+                  name: brand
+                  type: varchar(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: category
+                  type: varchar(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: thumbnail_id
+                  type: bigint
+                  constraints:
+                    nullable: true
+                    references: image(id)
+              - column:
+                  name: image_id
+                  type: bigint
+                  constraints:
+                    nullable: true
+                    references: image(id)

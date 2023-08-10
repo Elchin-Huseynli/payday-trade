@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: payday-trade
+    author : elchinhuseynli
+    version: 1.0.0

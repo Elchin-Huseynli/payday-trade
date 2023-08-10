@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: payday-trade
+  profiles:
+    include:
+      - db
+      - openapi
+      - email
+      - file
+      - security
+#      - liquibase
